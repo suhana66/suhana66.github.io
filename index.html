@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<header>
+    <h1>{{ site.title }}</h1>
+    {% if site.description %}
+        <p>{{ site.description }}</p>
+    {% endif %}
+</header>
+<nav>
+    <ul>
+        <li>me</li>
+        <ul>
+            <li><a href="mailto:suhanasajid4@gmail.com">email</a></li>
+            <li><a href="{{ site.github }}">github</a></li>
+            <li><a href="{{ site.linkedin }}">linkedin</a></li>
+            <li><a href="{{ '/assets/resume.pdf' | relative_url }}">resume</a></li>
+        </ul>
+        {% for category in site.categories %}
+            <li>{{ category | first | downcase }}</li>
+            <ul>
+            {% for post in category.last %}
+                <li>{{ post.date | date: site.date_format }} <a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+            </ul>
+        {% endfor %}
+        <li>quick-links</li>
+        <ul>
+            <li><a href="https://www.w3schools.com/cssref/css_selectors.php">CSS Selectors Reference Guide</a></li>
+        </ul>
+    </ul>
+</nav>

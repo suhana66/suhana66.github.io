@@ -1,0 +1,13 @@
+title: suhana66
+email: suhanasajid4@gmail.com
+baseurl: ""
+url: https://suhana66.github.io/
+permalink: /:slugified_categories/:slug
+
+github: https://github.com/suhana66
+linkedin: https://www.linkedin.com/in/suhana-sajid/
+
+date_format: "%Y-%m-%d"
+
+markdown: kramdown
+highlighter: rouge

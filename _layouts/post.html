@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<a href="{{ '/' | relative_url }}">..</a>
+<article>
+    <p class="meta">
+        <time datetime="{{ page.date }}">{{ page.date | date: site.date_format }}</time>
+    </p>
+    <h1>{{ page.title }} {{ page.category }}</h1>
+    {{ content }}
+</article>
